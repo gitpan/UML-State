@@ -1,7 +1,7 @@
 package UML::State;
 use strict; use warnings;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 =head1 NAME
 
@@ -45,9 +45,9 @@ examples of input and output.
 
 =head1 DESCRIPTION
 
-You will probably use this class by running drawstate.pl which is included
-in the distribution.  But you can use this package directly to gain control
-over the appearance of your pictures.
+You will probably use this class by running drawstate.pl or drawstatexml.pl
+which are included in the distribution.  But you can use this package
+directly to gain control over the appearance of your pictures.
 
 The two methods you need are new and draw (see below).  If you want, you
 may change the dimensions by setting the package global variables as shown

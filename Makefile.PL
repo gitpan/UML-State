@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 my @executables;
 
 use Config;
-foreach my $source ('drawstate.source') {
+foreach my $source (<*.source>) {
     my    $script      = $source;
     $script            =~ s/\.source/.pl/;
     open  SCRIPT,       ">$script" or next;
