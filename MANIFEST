@@ -1,0 +1,14 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+State.pm
+t/01state.t
+samples/coinop.input
+samples/coinop.png
+samples/coinop.svg
+samples/README
+samples/tennis.input
+samples/tennis.png
+samples/tennis.svg
+drawstate.source

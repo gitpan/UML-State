@@ -1,0 +1,26 @@
+This directory contains examples of state diagrams with input to and output
+from drawstate.pl.  For those who can't view SVG, PNG is also provided.
+
+This file explains the meaning of the diagrams.
+
+Coins:
+coinop.input coinop.svg coinop.png
+Suppose you have a coin operated vending machine which accepts 5, 10, and
+25 cent coins.  If it needs 25 cents for each purchase, accepting states
+are 25 and 30 (this diagram is simplified, while still showing common
+features).  The edges are numbered with coin denomination.  The
+nodes are labeled with the accumlated total of coins deposited to date.
+This example is the one that t/01state.t uses to test the generator.
+
+    drawstate.pl coinop.input > coinop.svg
+    java -jar batik-rasterize.jar coinop.svg
+
+Tennis:
+tennis.input tennis.svg tennis.png
+This represents the state machine for scoring tennis.  The edges are labeled S
+for server and R for receiver of serve.  The nodes are labeled with things
+the chair umpire might say at Wimbledon, except that the chair would replace
+Server and Receiver with names.
+
+    drawstate.pl tennis.input > tennis.svg
+    java -jar batik-rasterize.jar tennis.svg
